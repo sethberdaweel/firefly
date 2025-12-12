@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Firefly — Menu & Rating</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="firefly.css" />
+</head>
+<body class="ltr">
+  <header class="topbar">
+    <div class="brand"><div class="logo">FF</div><div class="brand-text"><h1>Firefly</h1><span>Menu & Ratings</span></div></div>
+    <nav class="navbar" id="nav">
+      <a href="#beef">Beef</a>
+      <a href="#chicken">Chicken</a>
+      <a href="#brisket">Brisket</a>
+      <a href="#appetizers">Appetizers</a>
+      <a href="#sides">Sides</a>
+      <a href="#kids">Kids</a>
+      <a href="#drinks">Drinks</a>
+      <button id="toggleLang" class="lang-toggle">العربية / EN</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <h2 id="slogan">Welcome to Firefly</h2>
+        <p id="slogan-sub">Scan the QR, choose your language, and rate us. Prices exclude tax.</p>
+       
+      </div>
+      <div class="hero-right">
+        <img src="images/hero-burger.svg" alt="Firefly burger illustration" />
+      </div>
+    </div>
+  </section>
+
+  <main id="menu" class="container">
+    <section id="beef" class="section">
+      <h2>Beef Burgers / برغر لحم</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="thumb" src="images/burger1.svg" alt="Angus burger">
+          <div class="card-body">
+            <h3>Angus burger<br><span class="ar">برغر أنجوس</span></h3>
+            <p class="desc">200g angus beef, beef bacon, firefly sauce, pickles, tomato, lettuce, caramelized onion, smoked cheese<br><span class="ar">٢٠٠ غرام لحم أنجوس، بيكون، صوص فايرفلاي، مخلل، بندورة، خس، بصل مكرمل، جبنة مدخنة</span></p>
+            <div class="price">5.65 JD</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="thumb" src="images/burger2.svg" alt="Kamakazi burger">
+          <div class="card-body">
+            <h3>Kamakazi burger<br><span class="ar">كاميكازي برغر</span></h3>
+            <p class="desc">2 × 150g beef, sweet chili, caramelized onion, cheddar, lettuce, pickles & firefly sauce<br><span class="ar">٢ × ١٥٠ غرام لحم، سويت تشيلي، بصل مكرمل، شيدر، خس، مخلل، صوص فايرفلاي</span></p>
+            <div class="price">5.55 JD (Combo available)</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="thumb" src="images/burger3.svg" alt="Firefly burger">
+          <div class="card-body">
+            <h3>Firefly burger<br><span class="ar">فايرفلاي برغر</span></h3>
+            <p class="desc">150g beef, beef bacon, pickles, tomato, cheddar, caramelized onion, lettuce & firefly sauce<br><span class="ar">١٥٠ غم لحم، بايكن، مخلل، بندورة، تشيدر، بصل مكرمل، خس، صوص فايرفلاي</span></p>
+            <div class="price">4.25 JD</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="thumb" src="images/burger4.svg" alt="Backfire">
+          <div class="card-body">
+            <h3>Backfire burger (Double / Single)<br><span class="ar">الباك فاير فلاي</span></h3>
+            <p class="desc">2 × 150g beef, chili lava sauce, jalapeños, lettuce, tomato, fresh onion, cheddar, hot sauce capsule<br><span class="ar">٢ × ١٥٠ غم لحم، صوص تشيلي لافا، هالبينو، خس، بندورة، بصل، تشيدر</span></p>
+            <div class="price">4.25 JD (sandwich) • 5.65 JD (combo)</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="thumb" src="images/burger5.svg" alt="Classic burger">
+          <div class="card-body">
+            <h3>Classic burger<br><span class="ar">برغر كلاسيك</span></h3>
+            <p class="desc">100g beef, mayo, tomato, ketchup, pickles, cheddar, caramelized onion, lettuce<br><span class="ar">١٠٠ غرام لحم، مايونيز، بندورة، كاتشاب، مخلل، شيدر، بصل مكرمل، خس</span></p>
+            <div class="price">2.75 JD (sandwich)</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="thumb" src="images/burger6.svg" alt="Wagyu burger">
+          <div class="card-body">
+            <h3>Wagyu burger<br><span class="ar">واغيو برغر</span></h3>
+            <p class="desc">Wagyu meat 110g, American potato bun, Jordan Valley sauce, lollo bionda lettuce, fresh onion, American cheese, tomato, jalapeño (optional)<br><span class="ar">لحمة واغيو ١١٠ غم، خبز بطاطا امريكي، صوص وادي الاردن، خس لولوبيوندا، بصل طازج، جبنة امريكان</span></p>
+            <div class="price">6.50 JD (combo) • 3.35 JD (sandwich)</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="thumb" src="images/burger7.svg" alt="Honey onion burger">
+          <div class="card-body">
+            <h3>Honey Onion burger<br><span class="ar">أونيون هوني برغر</span></h3>
+            <p class="desc">150g beef, pickles, tomato, lettuce, caramelized onion, cheddar, honey mustard sauce<br><span class="ar">١٥٠ غم لحم، مخلل، بندورة، خس، بصل مكرمل، شيدر، صوص هوني ماسترد</span></p>
+            <div class="price">3.75 JD</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="thumb" src="images/burger8.svg" alt="Mystic burger">
+          <div class="card-body">
+            <h3>Mystic burger<br><span class="ar">ميستيك برغر</span></h3>
+            <p class="desc">150g beef, BBQ sauce, tomato, lettuce, caramelized onion, pickles, cheddar<br><span class="ar">١٥٠ غم لحم، صوص باربكيو، بندورة، خس، بصل مكرمل، مخلل، شيدر</span></p>
+            <div class="price">3.75 JD</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="brisket" class="section">
+      <h2>Brisket & In-house / بريسكيت و ساندويش داخلي</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="thumb" src="images/brisket.svg" alt="Brisket sandwich">
+          <div class="card-body">
+            <h3>Brisket (Heisenberg / Mystic)</h3>
+            <p class="desc">100g brisket slices, black secret sauce, wallstreet sauce, lettuce, lolo bionda, fresh onion, mushroom & cheddar<br><span class="ar">١٠٠ غرام بريسكيت، صوص بلاك سيكرت، صوص وول ستريت، خس، بصل، فطر، تشيدر</span></p>
+            <div class="price">5.50 JD (combo) • 4.60 JD (sandwich)</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="thumb" src="images/inhouse.svg" alt="In-house Sicilian">
+          <div class="card-body">
+            <h3>In-house (Sicilian burger)<br><span class="ar">إن-هاوس (سيسيليان)</span></h3>
+            <p class="desc">150g beef, fried mozzarella, lettuce, fresh onion, mushroom, black sauce<br><span class="ar">١٥٠ غم لحم، موزاريلا مقلية، خس، بصل طازج، فطر، صوص بلاك</span></p>
+            <div class="price">4.55 JD</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="chicken" class="section">
+      <h2>Chicken Burgers / برغر دجاج</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="thumb" src="images/chicken1.svg" alt="Carthage chicken">
+          <div class="card-body">
+            <h3>Carthage Chicken Burger<br><span class="ar">برغر قرطاج</span></h3>
+            <p class="desc">180g fried chicken, tunisian thyme sauce, lettuce, pickles, coleslaw & cheddar<br><span class="ar">١٨٠ غم دجاج مقلي، صوص زعتر تونسي، خس، مخلل، كولسلو، تشيدر</span></p>
+            <div class="price">4.25 JD</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="thumb" src="images/chicken2.svg" alt="Grilled chicken">
+          <div class="card-body">
+            <h3>Grilled Chicken<br><span class="ar">دجاج مشوي</span></h3>
+            <p class="desc">150g grilled breast, lettuce, pickles, tomato, mayo & cheddar<br><span class="ar">١٥٠ غم صدر مشوي، خس، مخلل، بندورة، مايونيز، تشيدر</span></p>
+            <div class="price">3.35 JD</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="thumb" src="images/chicken3.svg" alt="Bucharest crispy">
+          <div class="card-body">
+            <h3>Bucharest (Crispy / Grilled)<br><span class="ar">بوخارست</span></h3>
+            <p class="desc">180g chicken (grilled or crispy), turkey, cheese, topped with Bucharest sauce<br><span class="ar">١٨٠ غم دجاج (مشوي أو مقلي)، تيركي، جبنة، صوص بوخارست</span></p>
+            <div class="price">4.25 JD</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="thumb" src="images/wallstreet.svg" alt="Wallstreet chicken">
+          <div class="card-body">
+            <h3>Wallstreet Chicken<br><span class="ar">وول ستريت تشكن</span></h3>
+            <p class="desc">180g grilled chicken, wallstreet sauce, mushroom, mixed cheese, lettuce<br><span class="ar">١٨٠ غم دجاج مشوي، صوص وول ستريت، فطر، جبنة مكس، خس</span></p>
+            <div class="price">4.95 JD (combo) • 3.95 JD (sandwich)</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="thumb" src="images/keto.svg" alt="Keto chicken">
+          <div class="card-body">
+            <h3>Keto Chicken<br><span class="ar">دجاج كيتو</span></h3>
+            <p class="desc">150g chicken, keto bread, mayonnaise, lettuce, tomato & cheddar<br><span class="ar">١٥٠ غم دجاج، خبز كيتو، مايونيز، خس، بندورة، تشيدر</span></p>
+            <div class="price">4.85 JD</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="appetizers" class="section">
+      <h2>Appetizers / المقبلات</h2>
+      <div class="grid grid-3">
+        <article class="card small">
+          <img class="thumb" src="images/mozzarella.svg" alt="Mozzarella sticks">
+          <div class="card-body">
+            <h3>Mozzarella sticks<br><span class="ar">أصابع الموزاريلا</span></h3>
+            <div class="price">2.25 JD • 3.60 JD (6 pieces)</div>
+          </div>
+        </article>
+
+        <article class="card small">
+          <img class="thumb" src="images/poppers.svg" alt="Crazy 8">
+          <div class="card-body">
+            <h3>Crazy 8 (Jalapeno poppers)<br><span class="ar">كرازي 8</span></h3>
+            <div class="price">2.75 JD</div>
+          </div>
+        </article>
+
+        <article class="card small">
+          <img class="thumb" src="images/onionrings.svg" alt="Onion rings">
+          <div class="card-body">
+            <h3>Onion Rings<br><span class="ar">بصل حلقات</span></h3>
+            <div class="price">2.00 JD (8 pcs)</div>
+          </div>
+        </article>
+
+        <article class="card small">
+          <img class="thumb" src="images/wings.svg" alt="Chicken wings">
+          <div class="card-body">
+            <h3>Chicken wings<br><span class="ar">أجنحة دجاج</span></h3>
+            <div class="price">2.75 JD</div>
+          </div>
+        </article>
+
+        <article class="card small">
+          <img class="thumb" src="images/cesar.svg" alt="Caesar salad">
+          <div class="card-body">
+            <h3>Chicken Caesar Salad<br><span class="ar">سلطة سيزر بالدجاج</span></h3>
+            <div class="price">3.00 JD</div>
+          </div>
+        </article>
+
+        <article class="card small">
+          <img class="thumb" src="images/coleslaw.svg" alt="Coleslaw">
+          <div class="card-body">
+            <h3>Coleslaw<br><span class="ar">كول سلو</span></h3>
+            <div class="price">0.90 JD</div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="sides" class="section">
+      <h2>Sides & Extras / أطباق جانبية</h2>
+      <div class="grid grid-3">
+        <article class="card small">
+          <img class="thumb" src="images/fries.svg" alt="French fries">
+          <div class="card-body"><h3>French fries<br><span class="ar">بطاطا مقلية</span></h3><div class="price">0.95 JD</div></div>
+        </article>
+        <article class="card small">
+          <img class="thumb" src="images/wedges.svg" alt="Wedges">
+          <div class="card-body"><h3>Wedges fries<br><span class="ar">وجبات ويدجز</span></h3><div class="price">1.50 JD</div></div>
+        </article>
+        <article class="card small">
+          <img class="thumb" src="images/curly.svg" alt="Curly fries">
+          <div class="card-body"><h3>Curly fries<br><span class="ar">بطاطا كيرلي</span></h3><div class="price">1.90 JD</div></div>
+        </article>
+        <article class="card small">
+          <img class="thumb" src="images/cubes.svg" alt="Chicken cubes">
+          <div class="card-body"><h3>Chicken cubes<br><span class="ar">دجاج مكعبات</span></h3><div class="price">2.50 JD</div></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="kids" class="section">
+      <h2>Kids Meals / وجبات الأطفال</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="thumb" src="images/kids1.svg" alt="Beef kids meal">
+          <div class="card-body">
+            <h3>Beef kids meal<br><span class="ar">وجبة أطفال لحم</span></h3>
+            <p class="desc">Sandwich 50g beef, ketchup, lettuce, honey mustard, with french fries, juice and a toy<br><span class="ar">ساندويش ٥٠ غم لحم، كاتشب، خس، هوني ماسترد، بطاطا، عصير ولعبة</span></p>
+            <div class="price">2.90 JD</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="thumb" src="images/kids2.svg" alt="Chicken kids meal">
+          <div class="card-body">
+            <h3>Chicken kids meal<br><span class="ar">وجبة أطفال دجاج</span></h3>
+            <p class="desc">Sandwich 70g fried chicken, lettuce, mayo, cheese, served with fries, juice and a toy<br><span class="ar">ساندويش ٧٠ غم دجاج مقلي، خس، مايونيز، جبنة، بطاطا، عصير ولعبة</span></p>
+            <div class="price">2.90 JD</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="drinks" class="section">
+      <h2>Drinks / مشروبات</h2>
+      <div class="grid grid-3">
+        <article class="card small"><div class="card-body"><h3>Small mineral water<br><span class="ar">مياه معدنية صغيرة</span></h3><div class="price">0.40 JD</div></div></article>
+        <article class="card small"><div class="card-body"><h3>Soft drinks<br><span class="ar">مشروبات غازية</span></h3><div class="price">0.50 JD</div></div></article>
+      </div>
+    </section>
+
+    <section id="reviews" class="section">
+      <h2>Rate Us on Google Maps</h2>
+      <a href="https://maps.app.goo.gl/Gdztg3ae9RtMindU8?g_st=ipc" target="_blank" class="btn primary big-review-btn">
+      Open Google Reviews
+      </a>
+    </section>
+    
+
+    <footer class="footer">
+      <div>Call / WhatsApp: 0795041122 • fireflyburger.jo</div>
+      <div class="muted">All prices exclude tax</div>
+    </footer>
+  </main>
+
+  <script src="firefly.js"></script>
+</body>
+</html>

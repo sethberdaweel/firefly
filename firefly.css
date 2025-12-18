@@ -115,7 +115,23 @@ img {
 /* ----------------------------------------------
    MOBILE NAV (Hamburger)
 ---------------------------------------------- */
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 30px;
+  cursor: pointer;
+}
+
 @media (max-width: 820px) {
+  /* Show hamburger on mobile */
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide desktop nav by default */
   .navbar {
     position: fixed;
     top: 62px;
@@ -128,24 +144,44 @@ img {
     backdrop-filter: blur(8px);
     transform: translateX(100%);
     transition: var(--transition);
+    gap: 22px;
+    z-index: 1000;
   }
 
+  /* Slide-in menu when toggled */
   .navbar.open {
     transform: translateX(0);
   }
 
   .navbar a {
-    font-size: 18px;
+    font-size: 20px;
+    width: 100%;
+    text-align: right;
     padding: 12px 0;
   }
 
-  /* Add hamburger button */
+  /* Remove the old fake menu icon */
   .topbar::after {
-    content: "☰";
-    font-size: 28px;
-    cursor: pointer;
+    content: none;
   }
 }
+
+/* ----------------------------------------------
+   RTL Mobile Menu Override
+   Make the menu slide from LEFT in Arabic mode
+---------------------------------------------- */
+body.rtl .navbar {
+  right: auto;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+body.rtl .navbar.open {
+  transform: translateX(0);
+}
+
+
+
 
 /* ----------------------------------------------
    Hero Section
@@ -390,3 +426,38 @@ input[type="text"] {
   margin-top: 12px;
   border-radius: 12px;
 }
+/* ----------------------------------------------
+   Footer Logo
+---------------------------------------------- */
+
+.instagram {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.footer div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* vertically aligns logo and text */
+  gap: 5px; /* optional spacing between logo and text */
+}
+
+
+
+/*
+Things to fix:
+1. the panel when switched to arabic
+2. Translate "Rate Us on Google" to Arabic
+3. Add more menu details, such as: 
+* ADD BEEF - 1.75JD
+* ADD ANGUS BEEF - 2.75JD
+* ADD BRISKET - 2.50JD
+* ADD CHEESE - 0.5JD
+* ADD CHEESE DIP - 1.90JD
+* ADD CHICKEN - 1.75JD
+
+
+4. ADD THE LOGO
+5. ADD THE PICTURES
+*/

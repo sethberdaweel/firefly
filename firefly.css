@@ -7,6 +7,13 @@
   --white: #fff;
   --muted: #d0d0d0;
   --card-bg: #0f0f0f;
+  --beef-accent: #c84c4c;       /* warm red */
+  --chicken-accent: #c89b4c;    /* golden */
+  --brisket-accent: #9b6cc8;    /* smoked purple */
+  --appetizers-accent: #4c8cc8; /* cool blue */
+  --sides-accent: #4cc88a;      /* muted green */
+  --kids-accent: #c86ca8;       /* soft pink */
+  --drinks-accent: #6cc8c8;     /* aqua */
   --border-soft: rgba(255,255,255,0.06);
 
   --radius: 14px;
@@ -268,12 +275,78 @@ body.rtl .navbar.open {
 .section {
   margin-top: 50px;
 }
+.section {
+  position: relative;
+}
+
+/* Accent bar on the left */
+.section::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: 4px;
+  opacity: 0.6;
+}
 
 .section h2 {
   margin-bottom: 20px;
   font-size: 26px;
+  opacity: 0.9;
   color: var(--red);
 }
+
+/* Beef */
+#beef::before,
+#beef h2 {
+  background: var(--beef-accent);
+  color: var(--beef-accent);
+}
+
+/* Chicken */
+#chicken::before,
+#chicken h2 {
+  background: var(--chicken-accent);
+  color: var(--chicken-accent);
+}
+
+/* Brisket */
+#brisket::before,
+#brisket h2 {
+  background: var(--brisket-accent);
+  color: var(--brisket-accent);
+}
+
+/* Appetizers */
+#appetizers::before,
+#appetizers h2 {
+  background: var(--appetizers-accent);
+  color: var(--appetizers-accent);
+}
+
+/* Sides */
+#sides::before,
+#sides h2 {
+  background: var(--sides-accent);
+  color: var(--sides-accent);
+}
+
+/* Kids */
+#kids::before,
+#kids h2 {
+  background: var(--kids-accent);
+  color: var(--kids-accent);
+}
+
+/* Drinks */
+#drinks::before,
+#drinks h2 {
+  background: var(--drinks-accent);
+  color: var(--drinks-accent);
+}
+
 
 /* ----------------------------------------------
    Grid Layouts
@@ -443,6 +516,62 @@ input[type="text"] {
   gap: 5px; /* optional spacing between logo and text */
 }
 
+/* ----------------------------------------------
+   RTL FIX — Desktop + Mobile
+---------------------------------------------- */
+
+/* Desktop (wide screens) */
+body.rtl .topbar {
+  direction: rtl;
+}
+
+body.rtl .navbar {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* Mobile slide menu */
+@media (max-width: 820px) {
+  body.rtl .navbar {
+    right: auto;
+    left: 0;
+    transform: translateX(-100%);
+  }
+
+  body.rtl .navbar.open {
+    transform: translateX(0);
+  }
+
+  body.ltr .navbar {
+    right: 0;
+    left: auto;
+    transform: translateX(100%);
+  }
+
+  body.ltr .navbar.open {
+    transform: translateX(0);
+  }
+}
+
+/* ===============================
+   Mobile layout: 2 items per row
+   =============================== */
+@media (max-width: 600px) {
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Optional: make cards slightly tighter on small screens */
+  .card {
+    padding: 10px;
+  }
+
+  .thumb {
+    max-height: 120px;
+    object-fit: contain;
+  }
+}
 
 
 /*
